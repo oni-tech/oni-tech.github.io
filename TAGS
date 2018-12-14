@@ -1,0 +1,60 @@
+
+./2014-12-08-type-operators.hs,622
+data I I8,9
+data I a = I I8,9
+data I a = I { unI unI8,9
+data Var Var9,10
+data Var a x = Var Var9,10
+data Var a x = Var { unK unK9,10
+data (f(12,13
+data (f + g) a = InL InL12,13
+data (f + g) a = InL (f a) | InR InR12,13
+class sub sub14,15
+class sub sub14,15
+  inj inj15,16
+instance instance17,18
+var var28,29
+var var29,30
+elim elim31,32
+elim elim32,33
+data UserVar UserVar39,40
+data UserVar = UserNameUserName39,40
+data ChristmasVar ChristmasVar41,42
+data ChristmasVar = ChristmasPresentChristmasPresent41,42
+email email43,44
+email email44,45
+main main51,52
+main main52,53
+
+./site.hs,76
+main main7,8
+main main8,9
+postCtx postCtx63,64
+postCtx postCtx64,65
+
+./2014-12-08-type-operators_flymake.hs,622
+data I I8,9
+data I a = I I8,9
+data I a = I { unI unI8,9
+data Var Var9,10
+data Var a x = Var Var9,10
+data Var a x = Var { unK unK9,10
+data (f(12,13
+data (f + g) a = InL InL12,13
+data (f + g) a = InL (f a) | InR InR12,13
+class sub sub14,15
+class sub sub14,15
+  inj inj15,16
+instance instance17,18
+var var28,29
+var var29,30
+elim elim31,32
+elim elim32,33
+data UserVar UserVar39,40
+data UserVar = UserNameUserName39,40
+data ChristmasVar ChristmasVar41,42
+data ChristmasVar = ChristmasPresentChristmasPresent41,42
+email email43,44
+email email44,45
+main main51,52
+main main52,53

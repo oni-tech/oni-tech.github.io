@@ -1,0 +1,3 @@
+[submodule "lib/hakyll"]
+	path = lib/hakyll
+	url = https://github.com/jaspervdj/hakyll.git
