@@ -1,0 +1,36 @@
+version: 2
+jobs:
+  build-8.2.2_2.0:
+    docker:
+      - image: tmcgilchrist/ci-haskell:ubuntu_xenial-8.2.2_2.0-20180915120131-4210fd6
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-mafia-8.2.2-{{ checksum "oni-hakyll.cabal" }}
+            - mafia-work-
+      - run:
+          name: Build
+          command: ./bin/ci
+
+      - save_cache:
+          paths:
+            - /root/.cabal
+            - /root/.mafia/
+          key: v1-mafia-8.2.2-{{ checksum "oni-hakyll.cabal" }}
+
+      - deploy:
+          name: Deploy master to Github Pages
+          command: |
+            git config --global user.email robots@circleci.com
+            git config --global user.name CircleCI
+            mafia exec site rebuild
+            git checkout master
+            git pull --rebase
+            # Overwrite existing files with new files
+            cp -a _site/. .
+            #  Commit
+            git add --all
+            git commit -m "[`date '+%F %T %Z'`] New release"
+            # Push
+            git push origin master:master
