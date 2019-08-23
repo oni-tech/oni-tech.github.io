@@ -1,13 +1,12 @@
 version: 2
-jobs:
-  build-8.2.2_2.0:
+  build-8.4.4_2.2:
     docker:
-      - image: tmcgilchrist/ci-haskell:ubuntu_xenial-8.2.2_2.0-20180915120131-4210fd6
+      - image: tmcgilchrist/ci-haskell:ubuntu_xenial-8.4.4_2.2-20190304094627-ccd1aec
     steps:
       - checkout
       - restore_cache:
           keys:
-            - v1-mafia-8.2.2-{{ checksum "oni-hakyll.cabal" }}
+            - v1-mafia-8.4.4-{{ checksum "oni-hakyll.cabal" }}
             - mafia-work-
       - run:
           name: Build
@@ -17,7 +16,7 @@ jobs:
           paths:
             - /root/.cabal
             - /root/.mafia/
-          key: v1-mafia-8.2.2-{{ checksum "oni-hakyll.cabal" }}
+          key: v1-mafia-8.4.4-{{ checksum "oni-hakyll.cabal" }}
 
       - deploy:
           name: Deploy master to Github Pages
