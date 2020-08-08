@@ -7,7 +7,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-oni-hakyll-8.4.4-{{ checksum "oni-hakyll.cabal" }}
+            - v1-oni-hakyll-8.4.4-{{ checksum "oni-tech.cabal" }}
       - run:
           name: Build
           command: |
@@ -16,7 +16,7 @@ jobs:
       - save_cache:
           paths:
             - /root/.cabal
-          key: v1-oni-hakyll-8.4.4-{{ checksum "oni-hakyll.cabal" }}
+          key: v1-oni-hakyll-8.4.4-{{ checksum "oni-tech.cabal" }}
 
       - deploy:
           name: Deploy master to Github Pages
