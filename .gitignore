@@ -2,3 +2,4 @@ _cache/
 _site/
 .cabal-sandbox/
 dist
+dist-newstyle/
