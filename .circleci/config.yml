@@ -1,30 +1,29 @@
-version: 2.1
+version: 2
+jobs:
+  build:
+    docker:
+      - image: tmcgilchrist/ci-haskell:ubuntu_xenial-8.4.4_2.2-20190304094627-ccd1aec
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-oni-hakyll-8.4.4-{{ checksum "oni-hakyll.cabal" }}
+      - run:
+          name: Build
+          command: |
+            cabal v2-build
 
-orbs:
-  haskell: haskell-works/haskell-build@4.1.7
-  merge-point: haskell-works/merge-point@1.0.0
-
-workflows:
-  multiple-ghc-build:
-    jobs:
-
-      - haskell/build-with-cci-cache:
-          name: GHC 8.4.4
-          executor: haskell/ghc-8_4_4
-          context: haskell-ci
-          cabal-test-extra: --test-show-details=direct
-
-      - merge-point/merge-point:
-          name: Build Ok
-          requires:
-            - GHC 8.4.4
+      - save_cache:
+          paths:
+            - /root/.cabal
+          key: v1-oni-hakyll-8.4.4-{{ checksum "oni-hakyll.cabal" }}
 
       - deploy:
           name: Deploy master to Github Pages
           command: |
             git config --global user.email robots@circleci.com
             git config --global user.name CircleCI
-            cabal exec site rebuild
+            mafia exec site rebuild
             git checkout master
             git pull --rebase
             # Overwrite existing files with new files
