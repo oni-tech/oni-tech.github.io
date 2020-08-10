@@ -3,7 +3,7 @@ version: 2.1
 orbs:
   haskell: haskell-works/haskell-build@4.1.7
   merge-point: haskell-works/merge-point@1.0.0
-  gh-pages: sugarshin/gh-pages@x.y.z
+  gh-pages: sugarshin/gh-pages@0.0.6
 
 workflows:
   multiple-ghc-build:
