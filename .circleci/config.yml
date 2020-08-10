@@ -4,7 +4,18 @@ orbs:
   haskell: haskell-works/haskell-build@4.1.7
   merge-point: haskell-works/merge-point@1.0.0
   gh-pages: sugarshin/gh-pages@0.0.6
-
+  
+executors:
+  darwin:
+    macos:
+      xcode: 10.0
+  ghc-8_6_5_old:
+    docker:
+      - image: quay.io/haskell_works/ghc-8.6.5:ubuntu-16.04
+  ghc-8_8_3_old:
+    docker:
+      - image: quay.io/haskell_works/ghc-8.8.3:ubuntu-16.04
+      
 workflows:
   multiple-ghc-build:
     jobs:
