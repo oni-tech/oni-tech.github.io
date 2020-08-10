@@ -2,6 +2,8 @@ version: 2.1
 
 orbs:
   haskell: haskell-works/haskell-build@4.1.7
+  merge-point: haskell-works/merge-point@1.0.0
+  gh-pages: sugarshin/gh-pages@x.y.z
 
 workflows:
   multiple-ghc-build:
@@ -12,16 +14,23 @@ workflows:
           executor: haskell/ghc-8_4_4
           context: haskell-ci
           cabal-test-extra: --test-show-details=direct
-          # after-build: [build-github-pages]
+          after-build: [build-github-pages]
 
       - merge-point/merge-point:
           name: Build Ok
           requires:
             - GHC 8.4.4
-# commands:
-#  build-github-pages:
-#    description: Deploy master to Github Pages
-#    steps:
-#      - run:
-#          name: Publish github pages
-#          command: ./bin/publish-github.sh
+
+      - gh-pages/deploy:
+          build-dir: _site
+          requires:
+            - Build Ok
+          ssh-fingerprints: 'ff:22:gs:v6:gg:2g:22:7j:73:gf:ja:36:ff:y2:22:89'
+            
+commands:
+  build-github-pages:
+    description: Deploy master to Github Pages
+    steps:
+      - run:
+          name: Publish github pages
+          command: ./bin/publish-github.sh
