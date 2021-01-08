@@ -3,3 +3,4 @@ _site/
 .cabal-sandbox/
 dist
 dist-newstyle/
+TAGS
