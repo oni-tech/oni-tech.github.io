@@ -1,6 +1,6 @@
 ---
 title: Example Post
-author: "Tim McGilchrist"
+author: "Oni Tech"
 date: "Jan 8, 2021"
 tags: haskell, ocaml
 description: "An Example post"

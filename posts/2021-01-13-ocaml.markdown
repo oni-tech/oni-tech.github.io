@@ -1,6 +1,6 @@
 ---
 title: OCaml Modules
-author: "Tim McGilchrist"
+author: "Oni Tech"
 date: "Jan 8, 2021"
 tags: ocaml
 description: "OCaml modules"
