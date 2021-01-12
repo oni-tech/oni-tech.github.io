@@ -1,20 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Oni Tech - $title$</title>
-        <link rel="stylesheet" type="text/css" href="/css/style.css" />
-        <link rel="stylesheet" type="text/css" href="/css/theme.css" />
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8">
+    <meta name="description" content="The OniTech Blog">
+    <meta name="author" content="Oni Tech">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>The OniTech Blog</title>
+    <link rel="alternative" type="application/rss+xml" title="Oni Tech RSS Feed" href="/atom.xml" />
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    $partial("templates/head.html")$
+</head>
     <body>
         $partial("templates/header.html")$
 
-        <div id="content">
+        <div id="page">
+<section class="table-of-contents">
             <h1>$title$</h1>
 
             $body$
+</section>
         </div>
         $partial("templates/footer.html")$
     </body>

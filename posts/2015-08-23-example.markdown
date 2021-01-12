@@ -2,7 +2,7 @@
 title: Example Post
 author: "Tim McGilchrist"
 date: "Jan 8, 2021"
-tags: haskell
+tags: haskell, ocaml
 description: "An Example post"
 image: "example.jpg"
 ---

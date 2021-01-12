@@ -14,11 +14,28 @@ main = hakyll $ do
     route idRoute
     compile compressCssCompiler
 
+  -- Build up tags
+  tags <- buildTags "posts/*" (fromCapture "tags/*.html")
+  tagsRules tags $ \tag pattern -> do
+    let title = "Posts tagged \"" ++ tag ++ "\""
+    route idRoute
+    compile $ do
+      posts <- recentFirst =<< loadAll pattern
+      let ctx =
+            constField "title" title
+              <> listField "posts" (postCtxWithTags tags) (return posts)
+              <> defaultContext
+
+      makeItem ""
+        >>= loadAndApplyTemplate "templates/tag.html" ctx
+        >>= loadAndApplyTemplate "templates/default.html" ctx
+        >>= relativizeUrls
+
   match "posts/*" $ do
     route $ setExtension "html"
-    compile $
+    compile $ do
       pandocCompiler
-        >>= loadAndApplyTemplate "templates/post.html" postCtx
+        >>= loadAndApplyTemplate "templates/post.html" (postCtxWithTags tags)
         >>= relativizeUrls
 
   match "index.html" $ do
@@ -27,16 +44,13 @@ main = hakyll $ do
       posts <- recentFirst =<< loadAll "posts/*"
       let indexCtx =
             listField "posts" postCtx (return posts)
-              `mappend` constField "title" "Home"
-              `mappend` defaultContext
+              <> constField "title" "Home"
+              <> defaultContext
 
       getResourceBody
         >>= applyAsTemplate indexCtx
         >>= loadAndApplyTemplate "templates/index.html" indexCtx
         >>= relativizeUrls
-
-  -- Build up tags
-  tags <- buildTags "posts/*" (fromCapture "tags/*.html")
 
   -- Render atom / rss feeds
   create ["atom.xml"] $ do
@@ -57,6 +71,10 @@ postCtx :: Context String
 postCtx =
   dateField "date" "%B %e, %Y"
     `mappend` defaultContext
+
+postCtxWithTags :: Tags -> Context String
+postCtxWithTags tags =
+  tagsField "tags" tags <> postCtx
 
 feedConfiguration :: FeedConfiguration
 feedConfiguration =
