@@ -1,39 +1,95 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>My Hakyll Blog - example post</title>
-        <link rel="stylesheet" type="text/css" href="../css/default.css" />
-    </head>
-    <body>
-        <div id="header">
-            <div id="logo">
-                <a href="../">My Hakyll Blog</a>
-            </div>
-            <div id="navigation">
-                <a href="../">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../contact.html">Contact</a>
-                <a href="../archive.html">Archive</a>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
+    <meta name="description" content="The OniTech Blog" />
+    <meta name="author" content="Oni Tech" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@oni-tech">
+<meta name="twitter:creator" content="@oni-tech">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{description}}">
+
+    <title>{{ title }}</title>
+    <link rel="alternate" type="application/atom+xml" title="Oni Tech Feed" href="../atom.xml" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5KB8BLT');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="stylesheet" href="../css/theme.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/syntax.css">
+
+  </head>
+  <body>
+    <header>
+  <nav>
+    <a id="beacon" href="../">
+      <img src="../images/oni.jpg" alt="Oni Tech" height="100px">
+      <div id="home-text">O.N.I</div>
+    </a>
+  </nav>
+
+  <div class="right-sidebar">
+    <a class="ext-link" href="https://github.com/oni-tech/">
+      <img src="../images/github-logo.png" alt="Github Profile" />
+    </a>
+  </div>
+</header>
+
+
+    <!-- {{#prevPostURL}} -->
+    <!-- <a id="leftarrow" class="arrow" href="{{ prevPostURL }}">&larr;</a> -->
+    <!-- {{/prevPostURL}} {{#nextPostURL}} -->
+    <!-- <a id="rightarrow" class="arrow" href="{{ nextPostURL }}">&rarr;</a> -->
+    <!-- {{/nextPostURL}} -->
+
+    <div id="page">
+      <div class="wrapper">
+        <div class="masthead">
+          <h1 class="title">
+            Example Post
+          </h1>
+          <br />
+
+          <!-- {{#image}} -->
+          <!-- <img class="post-image" src="/images/{{ image }}" /> -->
+          <!-- {{/image}} -->
+          <br />
+          <span class="byline">by Tim McGilchrist</span>
+          <br />
+          <span class="date">August 23, 2015</span>
+          <br />
+          <div class="metadata">
+            <br />
+            <!-- <span class="tags"> -->
+            <!--   Tags<br /> -->
+            <!--   {{#tags}} -->
+            <!--   <a class="tag" href="/tag/{{.}}">{{.}}</a> -->
+            <!--   {{/tags}} -->
+            <!-- </span> -->
+          </div>
         </div>
-
-        <div id="content">
-            <h1>example post</h1>
-
-            <div class="info">
-    Posted on August 23, 2015
-    
-</div>
-
-<p>Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl tincidunt et. Donec turpis lectus, mattis ac malesuada a, accumsan eu libero. Morbi condimentum, tortor et tincidunt ullamcorper, sem quam pretium nulla, id convallis lectus libero nec turpis. Proin dapibus nisi id est sodales nec ultrices tortor pellentesque.</p>
+      </div>
+      <article class="post">
+        <p>Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl tincidunt et. Donec turpis lectus, mattis ac malesuada a, accumsan eu libero. Morbi condimentum, tortor et tincidunt ullamcorper, sem quam pretium nulla, id convallis lectus libero nec turpis. Proin dapibus nisi id est sodales nec ultrices tortor pellentesque.</p>
 <p>Vivamus vel nisi ac lacus sollicitudin vulputate ac ut ligula. Nullam feugiat risus eget eros gravida in molestie sapien euismod. Nunc sed hendrerit orci. Nulla mollis consequat lorem ac blandit. Ut et turpis mauris. Nulla est odio, posuere id ullamcorper sit amet, tincidunt vel justo. Curabitur placerat tincidunt varius. Nulla vulputate, ipsum eu consectetur mollis, dui nibh aliquam neque, at ultricies leo ligula et arcu.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">data</span> <span class="dt">Foo</span> <span class="ot">=</span> <span class="dt">Bar</span> <span class="kw">deriving</span> (<span class="dt">Show</span>, <span class="dt">Eq</span>)</span></code></pre></div>
+        <br />
+        <br />
+      </article>
+    </div>
+    <footer>
+    &copy; 2021 Oni Tech - <a href="../atom.xml">Feed</a>
+</footer>
 
-        </div>
-        <div id="footer">
-            Site proudly generated by
-            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
-        </div>
-    </body>
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+
 </html>

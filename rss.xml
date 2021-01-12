@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>OniTech Blog</title>
+        <link>https://oni-tech.com</link>
+        <description><![CDATA[OniTech aims to share knowledge about functionalprogramming, distribute best-practices based on our extensive experience and tell about various topics from beginner-friendly introductions to advanced type-level tricks.]]></description>
+        <atom:link href="https://oni-tech.com/rss.xml" rel="self"
+                   type="application/rss+xml" />
+        <lastBuildDate>Sun, 23 Aug 2015 00:00:00 UT</lastBuildDate>
+        <item>
+    <title>Example Post</title>
+    <link>https://oni-tech.com/posts/2015-08-23-example.html</link>
+    <description><![CDATA[An Example post]]></description>
+    <pubDate>Sun, 23 Aug 2015 00:00:00 UT</pubDate>
+    <guid>https://oni-tech.com/posts/2015-08-23-example.html</guid>
+    <dc:creator>OniTech</dc:creator>
+</item>
+
+    </channel>
+</rss>

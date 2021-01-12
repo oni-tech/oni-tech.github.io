@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>OniTech Blog</title>
+    <link href="https://oni-tech.com/atom.xml" rel="self" />
+    <link href="https://oni-tech.com" />
+    <id>https://oni-tech.com/atom.xml</id>
+    <author>
+        <name>OniTech</name>
+        <email>oni-tech@gmail.com</email>
+    </author>
+    <updated>2015-08-23T00:00:00Z</updated>
+    <entry>
+    <title>Example Post</title>
+    <link href="https://oni-tech.com/posts/2015-08-23-example.html" />
+    <id>https://oni-tech.com/posts/2015-08-23-example.html</id>
+    <published>2015-08-23T00:00:00Z</published>
+    <updated>2015-08-23T00:00:00Z</updated>
+    <summary type="html"><![CDATA[An Example post]]></summary>
+</entry>
+
+</feed>
