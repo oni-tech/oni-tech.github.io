@@ -7,8 +7,16 @@
         <description><![CDATA[OniTech aims to share knowledge about functionalprogramming, distribute best-practices based on our extensive experience and tell about various topics from beginner-friendly introductions to advanced type-level tricks.]]></description>
         <atom:link href="https://oni-tech.com/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Sun, 23 Aug 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Wed, 13 Jan 2021 00:00:00 UT</lastBuildDate>
         <item>
+    <title>OCaml Modules</title>
+    <link>https://oni-tech.com/posts/2021-01-13-ocaml.html</link>
+    <description><![CDATA[OCaml modules]]></description>
+    <pubDate>Wed, 13 Jan 2021 00:00:00 UT</pubDate>
+    <guid>https://oni-tech.com/posts/2021-01-13-ocaml.html</guid>
+    <dc:creator>OniTech</dc:creator>
+</item>
+<item>
     <title>Example Post</title>
     <link>https://oni-tech.com/posts/2015-08-23-example.html</link>
     <description><![CDATA[An Example post]]></description>

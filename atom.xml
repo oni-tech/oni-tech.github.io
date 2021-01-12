@@ -8,8 +8,16 @@
         <name>OniTech</name>
         <email>oni-tech@gmail.com</email>
     </author>
-    <updated>2015-08-23T00:00:00Z</updated>
+    <updated>2021-01-13T00:00:00Z</updated>
     <entry>
+    <title>OCaml Modules</title>
+    <link href="https://oni-tech.com/posts/2021-01-13-ocaml.html" />
+    <id>https://oni-tech.com/posts/2021-01-13-ocaml.html</id>
+    <published>2021-01-13T00:00:00Z</published>
+    <updated>2021-01-13T00:00:00Z</updated>
+    <summary type="html"><![CDATA[OCaml modules]]></summary>
+</entry>
+<entry>
     <title>Example Post</title>
     <link href="https://oni-tech.com/posts/2015-08-23-example.html" />
     <id>https://oni-tech.com/posts/2015-08-23-example.html</id>
