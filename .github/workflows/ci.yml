@@ -13,12 +13,12 @@ jobs:
     strategy:
       matrix:
         cabal: ["3.2.0.0"]
-        ghc: ["8.4.4"]
+        ghc: ["8.10.3"]
     env:
       CONFIG: "--enable-tests --enable-benchmarks"
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-haskell@v1.1.4
+      - uses: haskell/actions/setup@v1
         id: setup-haskell-cabal
         with:
           ghc-version: ${{ matrix.ghc }}
@@ -34,9 +34,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-${{ matrix.ghc }}-
       - run: cabal v2-build $CONFIG
-      # - run: cabal v2-test $CONFIG
-      # - run: cabal v2-haddock $CONFIG
-      # - run: cabal v2-sdist
       - run: cabal exec site build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
