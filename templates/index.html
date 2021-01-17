@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head profile="http://www.w3.org/2005/10/profile">
+  <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <meta name="description" content="The OniTech Blog">
     <meta name="author" content="Oni Tech">
@@ -9,26 +9,26 @@
     <link rel="alternative" type="application/rss+xml" title="Oni Tech RSS Feed" href="/atom.xml" />
     <link rel="icon" type="image/png" href="/images/favicon.png">
     $partial("templates/head.html")$
-</head>
-<body>
+  </head>
+  <body>
     $partial("templates/header.html")$
-<div id="page">
-            <section class="table-of-contents">
-                <h1>All Posts</h1>
-                <!-- <div class="metadata"> -->
-                <!--     <br> -->
-                <!--     <span class="tags"> -->
-                <!--         Tags<br> -->
-                <!--         {{#tags}} -->
-                <!--             <a class="tag" href="{{url}}">{{tag}}</a> -->
-                <!--         {{/tags}} -->
-                <!--     </span> -->
-                <!-- </div> -->
-                $partial("templates/post-list.html")$
-        </section>
-</div>
+    <div id="page">
+      <section class="table-of-contents">
+        <h1>All Posts</h1>
+        <!-- <div class="metadata"> -->
+        <!--     <br> -->
+        <!--     <span class="tags"> -->
+        <!--         Tags<br> -->
+        <!--         {{#tags}} -->
+        <!--             <a class="tag" href="{{url}}">{{tag}}</a> -->
+        <!--         {{/tags}} -->
+        <!--     </span> -->
+        <!-- </div> -->
+        $partial("templates/post-list.html")$
+      </section>
+    </div>
 
-$partial("templates/footer.html")$
+    $partial("templates/footer.html")$
 
-</body>
+  </body>
 </html>
