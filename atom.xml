@@ -25,5 +25,13 @@
     <updated>2015-08-23T00:00:00Z</updated>
     <summary type="html"><![CDATA[An Example post]]></summary>
 </entry>
+<entry>
+    <title>Acer Aspire One</title>
+    <link href="https://oni-tech.com/posts/2009-05-23-acer-aspire-one-with-netbsd-50.html" />
+    <id>https://oni-tech.com/posts/2009-05-23-acer-aspire-one-with-netbsd-50.html</id>
+    <published>2009-05-23T00:00:00Z</published>
+    <updated>2009-05-23T00:00:00Z</updated>
+    <summary type="html"><![CDATA[Acer Aspire One]]></summary>
+</entry>
 
 </feed>
