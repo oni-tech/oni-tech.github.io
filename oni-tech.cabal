@@ -23,6 +23,7 @@ executable site
                      , filepath  >= 1.3  
                      , hakyll    ^>= 4.13
                      -- , hakyll-shortcut-links
+                     , blaze-html
                      , lens
                      , time
                      , aeson

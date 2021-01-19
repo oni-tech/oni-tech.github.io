@@ -12,18 +12,11 @@
   </head>
   <body>
     $partial("templates/header.html")$
+
+
     <div id="page">
       <section class="table-of-contents">
         <h1>All Posts</h1>
-        <!-- <div class="metadata"> -->
-        <!--     <br> -->
-        <!--     <span class="tags"> -->
-        <!--         Tags<br> -->
-        <!--         {{#tags}} -->
-        <!--             <a class="tag" href="{{url}}">{{tag}}</a> -->
-        <!--         {{/tags}} -->
-        <!--     </span> -->
-        <!-- </div> -->
         $partial("templates/post-list.html")$
       </section>
     </div>

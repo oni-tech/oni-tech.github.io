@@ -13,8 +13,9 @@ TODO
 
  * tags cloud
    * main all posts page
-   * post page, tags isn't in the right html element
+   * ~~post page, tags isn't in the right html element~~
  * simple about information page
- * cleanup templates, remove anything that isn't used
+ * clean css style
+ * ~~cleanup templates, remove anything that isn't used~~
  * ~~github actions build and deploy~~
- * example route redirection from old urls to new urls
+ * ~~example route redirection from old urls to new urls~~
