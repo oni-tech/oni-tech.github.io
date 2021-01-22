@@ -1,78 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head profile="http://www.w3.org/2005/10/profile">
-    <meta charset="UTF-8" />
-    <meta name="description" content="The OniTech Blog" />
-    <meta name="author" content="Oni Tech" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Example Post</title>
-    <link rel="alternate" type="application/atom+xml" title="Oni Tech Feed" href="../atom.xml" />
-    <link rel="icon" type="image/png" href="../images/favicon.png" />
-    <link rel="stylesheet" href="../css/theme.css">
-<link rel="stylesheet" href="../css/style.css">
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8">
+    <meta name="description" content="The OniTech Blog">
+    <meta name="author" content="Oni Tech">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The OniTech Blog</title>
+    <link rel="alternative" type="application/rss+xml" title="Oni Tech RSS Feed" href="../atom.xml" />
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/syntax.css">
+<link rel="stylesheet" href="../css/theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
 
-  </head>
-  <body>
-    <header>
-  <nav>
-    <a id="beacon" href="../">
-      <img src="../images/oni.jpg" alt="Oni Tech" height="100px">
-      <div id="home-text"></div>
-    </a>
-  </nav>
+</head>
+    <body>
+        <header>
+  <div class="container clearfix">
+    <a href="https://oni-tech.com" class="path">[Oni Tech]</a>
 
-  <div class="right-sidebar">
-    <a class="ext-link" href="https://github.com/oni-tech/">
-      <img src="../images/github-logo.png" alt="Github Profile" />
-    </a>
-  </div>
+    <span class="caret"># _</span>
+    <a class="path" href="https://github.com/oni-tech/">Github</a>
+    <div class="right">
+    </div>
 </header>
 
 
-    <!-- {{#prevPostURL}} -->
-    <!-- <a id="leftarrow" class="arrow" href="{{ prevPostURL }}">&larr;</a> -->
-    <!-- {{/prevPostURL}} {{#nextPostURL}} -->
-    <!-- <a id="rightarrow" class="arrow" href="{{ nextPostURL }}">&rarr;</a> -->
-    <!-- {{/nextPostURL}} -->
-
-    <div id="page">
-      <div class="wrapper">
-        <div class="masthead">
-          <h1 class="title">
-            Example Post
-          </h1>
-          <br />
-
-          <!-- {{#image}} -->
-          <!-- <img class="post-image" src="/images/{{ image }}" /> -->
-          <!-- {{/image}} -->
-          <br />
-          <span class="byline">by Oni Tech</span>
-          <br />
-          <span class="date">August 23, 2015</span>
-          <br />
-          <div class="metadata">
-            <br />
-            <span class="tags">
-              Tags<br /><a href="../tags/haskell.html" class="tag">haskell</a> <a href="../tags/ocaml.html" class="tag">ocaml</a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <article class="post">
-        <p>Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl tincidunt et. Donec turpis lectus, mattis ac malesuada a, accumsan eu libero. Morbi condimentum, tortor et tincidunt ullamcorper, sem quam pretium nulla, id convallis lectus libero nec turpis. Proin dapibus nisi id est sodales nec ultrices tortor pellentesque.</p>
+        <div class="container">
+          <article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="August 23, 2015">August 23, 2015</time></span>
+    <br>
+    <span class="key">tags:</span>
+    <span class="val">
+      <a href="../tags/haskell.html" class="tag">haskell</a> <a href="../tags/ocaml.html" class="tag">ocaml</a>
+    </span>
+  </div>
+  <h1 class="headline" itemprop="headline">Example Post</h1>
+  <section class="body" itemprop="articleBody">
+    <p>Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl tincidunt et. Donec turpis lectus, mattis ac malesuada a, accumsan eu libero. Morbi condimentum, tortor et tincidunt ullamcorper, sem quam pretium nulla, id convallis lectus libero nec turpis. Proin dapibus nisi id est sodales nec ultrices tortor pellentesque.</p>
 <p>Vivamus vel nisi ac lacus sollicitudin vulputate ac ut ligula. Nullam feugiat risus eget eros gravida in molestie sapien euismod. Nunc sed hendrerit orci. Nulla mollis consequat lorem ac blandit. Ut et turpis mauris. Nulla est odio, posuere id ullamcorper sit amet, tincidunt vel justo. Curabitur placerat tincidunt varius. Nulla vulputate, ipsum eu consectetur mollis, dui nibh aliquam neque, at ultricies leo ligula et arcu.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">data</span> <span class="dt">Foo</span> <span class="ot">=</span> <span class="dt">Bar</span> <span class="kw">deriving</span> (<span class="dt">Show</span>, <span class="dt">Eq</span>)</span></code></pre></div>
-        <br />
-        <br />
-      </article>
-    </div>
-    <footer>
-    &copy; 2021 Oni Tech - <a href="../atom.xml">Feed</a>
+  </section>
+</article>
+
+        </div>
+        <footer>
+  <div class="container">
+    <span class="copyright">&copy; 2021 Oni Tech - <a href="../atom.xml">Feed</a> /
+      <span class="theme">Theme - <a href="https://github.com/htdvisser/hugo-base16-theme.git">hugo-base16-theme</a>
+  </div>
 </footer>
 
-<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
-
+    </body>
 </html>
