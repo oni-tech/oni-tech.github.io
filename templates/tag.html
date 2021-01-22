@@ -1,1 +1,20 @@
-$partial("templates/post-list.html")$
+<main role="main" class="article-list">
+  <h1 class="list-title">Recent Posts in $tag$</h1>
+
+  <div class="article-list">
+    $for(posts)$
+
+    <article class="list-item" itemscope itemtype="http://oni-tech.com">
+      <h2 class="headline" itemprop="headline"><a href="$url$">$title$</a></h2>
+      <div class="meta">
+        <span class="key">published on</span>
+        <span class="val"><time itemprop="datePublished" datetime="$date$">$date$</time></span>
+      </div>
+      <section class="summary">
+        >      Insert Summary Here.
+        <a href="$url$">Read More...</a>
+      </section>
+    </article>
+    $endfor$
+  </div>
+</section>

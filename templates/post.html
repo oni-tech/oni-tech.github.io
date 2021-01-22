@@ -1,58 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head profile="http://www.w3.org/2005/10/profile">
-    <meta charset="UTF-8" />
-    <meta name="description" content="The OniTech Blog" />
-    <meta name="author" content="Oni Tech" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>$title$</title>
-    <link
-      rel="alternate"
-      type="application/atom+xml"
-      title="Oni Tech Feed"
-      href="/atom.xml"
-    />
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
-    $partial("templates/head.html")$
-  </head>
-  <body>
-    $partial("templates/header.html")$
-
-    <!-- {{#prevPostURL}} -->
-    <!-- <a id="leftarrow" class="arrow" href="{{ prevPostURL }}">&larr;</a> -->
-    <!-- {{/prevPostURL}} {{#nextPostURL}} -->
-    <!-- <a id="rightarrow" class="arrow" href="{{ nextPostURL }}">&rarr;</a> -->
-    <!-- {{/nextPostURL}} -->
-
-    <div id="page">
-      <div class="wrapper">
-        <div class="masthead">
-          <h1 class="title">
-            $title$
-          </h1>
-          <br />
-
-          <!-- {{#image}} -->
-          <!-- <img class="post-image" src="/images/{{ image }}" /> -->
-          <!-- {{/image}} -->
-          <br />
-          <span class="byline">by $author$</span>
-          <br />
-          <span class="date">$date$</span>
-          <br />
-          <div class="metadata">
-            <br />
-            <span class="tags">
-              Tags<br />$tags$
-            </span>
-          </div>
-        </div>
-      </div>
-      <article class="post">
-        $body$
-        <br />
-        <br />
-      </article>
-    </div>
-    $partial("templates/footer.html")$
-</html>
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="$date$">$date$</time></span>
+    <br>
+    <span class="key">tags:</span>
+    <span class="val">
+      $tags$
+    </span>
+  </div>
+  <h1 class="headline" itemprop="headline">$title$</h1>
+  <section class="body" itemprop="articleBody">
+    $body$
+  </section>
+</article>
