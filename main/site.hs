@@ -29,6 +29,7 @@ main = hakyll $ do
       let ctx =
             constField "title" title
               <> listField "posts" (postCtxWithTags tags) (return posts)
+              <> constField "tag" tag
               <> defaultContext
 
       makeItem ""
@@ -42,6 +43,7 @@ main = hakyll $ do
     compile $ do
       pandocCompiler
         >>= loadAndApplyTemplate "templates/post.html" (postCtxWithTags tags)
+        >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags tags)
         >>= relativizeUrls
 
   -- Create HTML redirects for old url structure
