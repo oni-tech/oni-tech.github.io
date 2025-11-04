@@ -2,8 +2,11 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title is-1">
-        Posts Tagged: $tag$
+        Technical Blog
       </h1>
+      <p class="subtitle is-4">
+        Insights, tutorials, and best practices for functional programming
+      </p>
     </div>
   </div>
 </section>
@@ -23,6 +26,11 @@
             </span>
             <span>$date$</span>
           </span>
+          $if(tags)$
+          <span style="margin-left: 1rem;">
+            $tags$
+          </span>
+          $endif$
         </div>
       </article>
       $endfor$
