@@ -167,7 +167,13 @@ body {
     color: var(--oni-dark-red);
 }
 
-.post-title:hover {
+.post-title a {
+    color: var(--oni-dark-red);
+    text-decoration: none;
+}
+
+.post-title:hover,
+.post-title a:hover {
     color: var(--oni-red);
 }
 
