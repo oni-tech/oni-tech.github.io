@@ -255,7 +255,8 @@ footer a {
 .article-list article h2.headline,
 .article-list article h2.headline a {
   margin-top: 0;
-  color: var(--base0d);
+  color: var(--base0f);
+  text-decoration: none;
 }
 
 .article-list article .meta {
