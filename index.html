@@ -1,107 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head profile="http://www.w3.org/2005/10/profile">
+<head>
     <meta charset="UTF-8">
-    <meta name="description" content="The OniTech Blog">
+    <meta name="description" content="Oni Tech - Expert OCaml and Haskell Consulting">
     <meta name="author" content="Oni Tech">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The OniTech Blog</title>
-    <link rel="alternative" type="application/rss+xml" title="Oni Tech RSS Feed" href="./atom.xml" />
-    <link rel="icon" type="image/png" href="./images/favicon.png">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Home - Oni Tech</title>
+    <link rel="alternate" type="application/rss+xml" title="Oni Tech RSS Feed" href="./atom.xml" />
+    <link rel="icon" type="image/jpeg" href="./images/oni.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./css/oni-theme.css">
 <link rel="stylesheet" href="./css/syntax.css">
-<link rel="stylesheet" href="./css/theme.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
 
-  </head>
-  <body>
-    <header>
-  <div class="container clearfix">
-    <a href="https://oni-tech.com" class="path">[Oni Tech]</a>
-
-    <span class="caret"># _</span>
-    <a class="path" href="https://github.com/oni-tech/">Github</a>
-    <div class="right">
-    </div>
-</header>
-
-
-
-    <div class="container">
-      <main role="main" class="homepage">
-        <h1 class="site-title">
-          <!-- <span class="base05">[</span> -->
-          <span class="base08">O</span>
-          <span class="base09">N</span>
-          <span class="base0a">I</span>
-          <span class="base05">-</span>
-          <span class="base0b">T</span>
-          <span class="base0c">E</span>
-          <span class="base0d">C</span>
-          <span class="base0d">H</span>
-          <!-- <span class="base05">]</span> -->
-        </h1>
-        <div class="hero-logo">
-          <img src="./images/base16-eighties.svg">
-        </div>
-        <div style="text-align: center;">
-
-        </div>
-        <h1 class="headline">Recent Posts</h1>
-
-<div class="article-list">
-  
-
-  <article class="list-item" itemscope itemtype="http://oni-tech.com">
-    <h2 class="headline" itemprop="headline"><a href="./posts/2021-01-13-ocaml.html">OCaml Modules</a></h2>
-    <div class="meta">
-      <span class="key">published on</span>
-      <span class="val"><time itemprop="datePublished" datetime="January 13, 2021">January 13, 2021</time></span>
-    </div>
-    <section class="summary">
-      Insert Summary Here.
-      <a href="./posts/2021-01-13-ocaml.html">Read More...</a>
-    </section>
-  </article>
-  
-
-  <article class="list-item" itemscope itemtype="http://oni-tech.com">
-    <h2 class="headline" itemprop="headline"><a href="./posts/2015-08-23-example.html">Example Post</a></h2>
-    <div class="meta">
-      <span class="key">published on</span>
-      <span class="val"><time itemprop="datePublished" datetime="August 23, 2015">August 23, 2015</time></span>
-    </div>
-    <section class="summary">
-      Insert Summary Here.
-      <a href="./posts/2015-08-23-example.html">Read More...</a>
-    </section>
-  </article>
-  
-
-  <article class="list-item" itemscope itemtype="http://oni-tech.com">
-    <h2 class="headline" itemprop="headline"><a href="./posts/2009-05-23-acer-aspire-one-with-netbsd-50.html">Acer Aspire One</a></h2>
-    <div class="meta">
-      <span class="key">published on</span>
-      <span class="val"><time itemprop="datePublished" datetime="May 23, 2009">May 23, 2009</time></span>
-    </div>
-    <section class="summary">
-      Insert Summary Here.
-      <a href="./posts/2009-05-23-acer-aspire-one-with-netbsd-50.html">Read More...</a>
-    </section>
-  </article>
-  
-</ul>
-
-      </main>
-    </div>
-
-    <footer>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="container">
-    <span class="copyright">&copy; 2021 Oni Tech - <a href="./atom.xml">Feed</a> /
-      <span class="theme">Theme - <a href="https://github.com/htdvisser/hugo-base16-theme.git">hugo-base16-theme</a>
+    <div class="navbar-brand">
+      <a class="navbar-item" href="./">
+        <img src="./images/oni.jpg" alt="Oni Tech Logo">
+        <span style="margin-left: 0.5rem;">Oni Tech</span>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">
+          Home
+        </a>
+        <a class="navbar-item" href="./consulting.html">
+          Consulting
+        </a>
+        <a class="navbar-item" href="./blog.html">
+          Blog
+        </a>
+        <a class="navbar-item" href="./opensource.html">
+          Open Source
+        </a>
+        <a class="navbar-item" href="./about.html">
+          About
+        </a>
+        <a class="navbar-item" href="https://github.com/oni-tech" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+    });
+  });
+});
+</script>
+
+
+    <!-- Hero Section -->
+<section class="hero is-oni is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <img src="./images/oni.jpg" alt="Oni Tech Logo" class="hero-logo">
+      <h1 class="title is-1 mt-4">
+        Oni Tech
+      </h1>
+      <h2 class="subtitle is-3">
+        Expert OCaml and Haskell Consulting
+      </h2>
+      <p class="subtitle is-5">
+        Build robust, type-safe, functional software with proven expertise
+      </p>
+      <div class="buttons is-centered mt-5">
+        <a href="./consulting.html" class="button is-oni-primary is-large">
+          <span class="icon">
+            <i class="fas fa-briefcase"></i>
+          </span>
+          <span>Our Services</span>
+        </a>
+        <a href="./about.html" class="button is-oni-secondary is-large">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Get in Touch</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What We Do Section -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2 section-title has-text-centered">What We Do</h2>
+    <div class="columns">
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-content has-text-centered">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="title is-4">Custom Development</h3>
+            <p>We build high-quality, maintainable software solutions using OCaml and Haskell, leveraging strong type systems and functional programming principles.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-content has-text-centered">
+            <div class="service-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="title is-4">Expert Consulting</h3>
+            <p>Our team provides strategic guidance on architecture, performance optimization, and best practices for functional programming projects.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-content has-text-centered">
+            <div class="service-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="title is-4">Training & Mentoring</h3>
+            <p>We help teams transition to functional programming with hands-on training, code reviews, and ongoing mentorship.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="section" style="background-color: #f9f9f9;">
+  <div class="container">
+    <h2 class="title is-2 section-title has-text-centered">Why Choose Oni Tech</h2>
+    <div class="columns is-vcentered">
+      <div class="column is-6">
+        <div class="content">
+          <div class="box is-highlighted">
+            <h3 class="title is-4"><i class="fas fa-check-circle" style="color: var(--oni-gold);"></i> Deep Expertise</h3>
+            <p>Years of experience building production systems in OCaml and Haskell across various domains.</p>
+          </div>
+          <div class="box is-highlighted">
+            <h3 class="title is-4"><i class="fas fa-check-circle" style="color: var(--oni-gold);"></i> Proven Track Record</h3>
+            <p>Successfully delivered complex projects for clients ranging from startups to enterprises.</p>
+          </div>
+          <div class="box is-highlighted">
+            <h3 class="title is-4"><i class="fas fa-check-circle" style="color: var(--oni-gold);"></i> Open Source Contributors</h3>
+            <p>Active members of the OCaml and Haskell communities, contributing to key projects and libraries.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-6">
+        <div class="content">
+          <h3 class="title is-3">Functional Programming Excellence</h3>
+          <p class="is-size-5">
+            We specialize in leveraging the power of functional programming to build software that is:
+          </p>
+          <ul class="is-size-5">
+            <li><strong>Reliable:</strong> Strong type systems catch errors at compile time</li>
+            <li><strong>Maintainable:</strong> Pure functions and immutability make code easier to reason about</li>
+            <li><strong>Scalable:</strong> Functional patterns excel in concurrent and distributed systems</li>
+            <li><strong>Performant:</strong> Efficient compilation and optimization for production workloads</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Blog Posts -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2 section-title">Latest from Our Blog</h2>
+    
+<article class="box">
+  <h3 class="title is-4 post-title">
+    <a href="./posts/2021-01-13-ocaml.html">OCaml Modules</a>
+  </h3>
+  <div class="post-meta">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span>January 13, 2021</span>
+    </span>
+  </div>
+</article>
+
+<article class="box">
+  <h3 class="title is-4 post-title">
+    <a href="./posts/2015-08-23-example.html">Example Post</a>
+  </h3>
+  <div class="post-meta">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span>August 23, 2015</span>
+    </span>
+  </div>
+</article>
+
+<article class="box">
+  <h3 class="title is-4 post-title">
+    <a href="./posts/2009-05-23-acer-aspire-one-with-netbsd-50.html">Acer Aspire One</a>
+  </h3>
+  <div class="post-meta">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span>May 23, 2009</span>
+    </span>
+  </div>
+</article>
+
+
+    <div class="has-text-centered mt-5">
+      <a href="./blog.html" class="button is-oni-primary">
+        <span>View All Posts</span>
+        <span class="icon">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="section" style="background: linear-gradient(135deg, var(--oni-dark-red) 0%, var(--oni-red) 100%);">
+  <div class="container has-text-centered">
+    <h2 class="title is-2" style="color: white;">Ready to Build Something Great?</h2>
+    <p class="subtitle is-4" style="color: white;">Let's discuss how we can help with your next project.</p>
+    <a href="./about.html" class="button is-oni-secondary is-large mt-4">
+      <span class="icon">
+        <i class="fas fa-comments"></i>
+      </span>
+      <span>Start a Conversation</span>
+    </a>
+  </div>
+</section>
+
+
+    <footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Oni Tech</h3>
+        <p>Expert consulting in OCaml and Haskell for robust, functional software solutions.</p>
+      </div>
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Links</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="./consulting.html">Consulting Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./opensource.html">Open Source</a></li>
+          <li><a href="./about.html">About & Contact</a></li>
+        </ul>
+      </div>
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Connect</h3>
+        <p>
+          <a href="https://github.com/oni-tech" target="_blank">
+            <span class="icon-text">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </span>
+          </a>
+        </p>
+        <p>
+          <a href="./atom.xml">
+            <span class="icon-text">
+              <span class="icon"><i class="fas fa-rss"></i></span>
+              <span>RSS Feed</span>
+            </span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <hr style="background-color: var(--oni-grey);">
+    <div class="content has-text-centered">
+      <p>&copy; 2025 Oni Tech. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 
-
-  </body>
+</body>
 </html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Oni Tech - Expert OCaml and Haskell Consulting">
+    <meta name="author" content="Oni Tech">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open Source - Oni Tech</title>
+    <link rel="alternate" type="application/rss+xml" title="Oni Tech RSS Feed" href="./atom.xml" />
+    <link rel="icon" type="image/jpeg" href="./images/oni.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./css/oni-theme.css">
+<link rel="stylesheet" href="./css/syntax.css">
+
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="./">
+        <img src="./images/oni.jpg" alt="Oni Tech Logo">
+        <span style="margin-left: 0.5rem;">Oni Tech</span>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">
+          Home
+        </a>
+        <a class="navbar-item" href="./consulting.html">
+          Consulting
+        </a>
+        <a class="navbar-item" href="./blog.html">
+          Blog
+        </a>
+        <a class="navbar-item" href="./opensource.html">
+          Open Source
+        </a>
+        <a class="navbar-item" href="./about.html">
+          About
+        </a>
+        <a class="navbar-item" href="https://github.com/oni-tech" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+    });
+  });
+});
+</script>
+
+
+    <section class="section">
+  <div class="container">
+    <div class="content">
+      <h1 id="open-source">Open Source</h1>
+<p>We believe in giving back to the communities that support us. Here are some of the open source projects we contribute to and maintain.</p>
+<div class="accent-bar">
+
+</div>
+<h2 id="our-contributions">Our Contributions</h2>
+<p>We actively contribute to key projects in the OCaml and Haskell ecosystems. Our work includes:</p>
+<div class="columns">
+<div class="column is-6">
+<h3 id="ocaml-ecosystem">OCaml Ecosystem</h3>
+<ul>
+<li><strong>Core Libraries</strong> - Contributions to standard libraries and foundational tools</li>
+<li><strong>Build Tools</strong> - Improvements to Dune and opam</li>
+<li><strong>Web Frameworks</strong> - Work on Dream, Eio, and related libraries</li>
+<li><strong>Developer Tools</strong> - OCaml LSP, Merlin, and editor integrations</li>
+<li><strong>Documentation</strong> - Tutorials, guides, and API documentation</li>
+</ul>
+</div><div class="column is-6">
+<h3 id="haskell-ecosystem">Haskell Ecosystem</h3>
+<ul>
+<li><strong>Language Extensions</strong> - Contributions to GHC and language proposals</li>
+<li><strong>Libraries</strong> - Maintenance and development of popular packages</li>
+<li><strong>Build Tools</strong> - Stack, Cabal, and Haskell tooling</li>
+<li><strong>Web Frameworks</strong> - Servant, Yesod, and related ecosystem</li>
+<li><strong>Community Resources</strong> - Blog posts, talks, and educational materials</li>
+</ul>
+</div>
+</div>
+<div class="accent-bar">
+
+</div>
+<h2 id="featured-projects">Featured Projects</h2>
+<section id="project-name" class="box is-highlighted">
+<h3>🚀 Project Name</h3>
+<p>A brief description of the project, what problem it solves, and why it matters to the functional programming community. Includes links to repository and documentation.</p>
+<p><strong>Technologies:</strong> OCaml, Dune, Lwt
+<strong>Status:</strong> Active Development</p>
+<p><a href="https://github.com/oni-tech" class="button is-oni-primary">
+<span class="icon"><i class="fab fa-github"></i></span>
+<span>View on GitHub</span>
+</a></p>
+</section>
+<section id="another-project" class="box is-highlighted">
+<h3>📦 Another Project</h3>
+<p>Description of another project showing the breadth of work. Could be a library, tool, or application that demonstrates expertise in the field.</p>
+<p><strong>Technologies:</strong> Haskell, Servant, PostgreSQL
+<strong>Status:</strong> Stable</p>
+<p><a href="https://github.com/oni-tech" class="button is-oni-primary">
+<span class="icon"><i class="fab fa-github"></i></span>
+<span>View on GitHub</span>
+</a></p>
+</section>
+<div class="accent-bar">
+
+</div>
+<h2 id="community-involvement">Community Involvement</h2>
+<p>Beyond code contributions, we’re active in the functional programming community:</p>
+<ul>
+<li>🎤 <strong>Conference Talks</strong> - Speaking at OCaml Workshop, Haskell Symposium, and other events</li>
+<li>✍️ <strong>Writing</strong> - Technical blog posts and articles</li>
+<li>👥 <strong>Mentoring</strong> - Helping newcomers learn functional programming</li>
+<li>🎓 <strong>Education</strong> - Creating tutorials and educational resources</li>
+<li>💬 <strong>Discussion</strong> - Participating in RFCs, mailing lists, and forums</li>
+</ul>
+<div class="accent-bar">
+
+</div>
+<h2 id="interested-in-collaboration">Interested in Collaboration?</h2>
+<p>We’re always looking for opportunities to collaborate on interesting projects. If you have an open source project that could benefit from our expertise, or if you’re interested in sponsoring our open source work, please reach out.</p>
+<div class="buttons is-centered" style="margin-top: 2rem;">
+<p><a href="./about.html" class="button is-oni-primary is-large">
+<span class="icon"><i class="fas fa-envelope"></i></span>
+<span>Get in Touch</span>
+</a>
+<a href="https://github.com/oni-tech" class="button is-oni-secondary is-large">
+<span class="icon"><i class="fab fa-github"></i></span>
+<span>View Our GitHub</span>
+</a></p>
+</div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Oni Tech</h3>
+        <p>Expert consulting in OCaml and Haskell for robust, functional software solutions.</p>
+      </div>
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Links</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="./consulting.html">Consulting Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./opensource.html">Open Source</a></li>
+          <li><a href="./about.html">About & Contact</a></li>
+        </ul>
+      </div>
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Connect</h3>
+        <p>
+          <a href="https://github.com/oni-tech" target="_blank">
+            <span class="icon-text">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </span>
+          </a>
+        </p>
+        <p>
+          <a href="./atom.xml">
+            <span class="icon-text">
+              <span class="icon"><i class="fas fa-rss"></i></span>
+              <span>RSS Feed</span>
+            </span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <hr style="background-color: var(--oni-grey);">
+    <div class="content has-text-centered">
+      <p>&copy; 2025 Oni Tech. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

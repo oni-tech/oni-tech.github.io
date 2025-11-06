@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Oni Tech - Expert OCaml and Haskell Consulting">
+    <meta name="author" content="Oni Tech">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About & Contact - Oni Tech</title>
+    <link rel="alternate" type="application/rss+xml" title="Oni Tech RSS Feed" href="./atom.xml" />
+    <link rel="icon" type="image/jpeg" href="./images/oni.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./css/oni-theme.css">
+<link rel="stylesheet" href="./css/syntax.css">
+
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="./">
+        <img src="./images/oni.jpg" alt="Oni Tech Logo">
+        <span style="margin-left: 0.5rem;">Oni Tech</span>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">
+          Home
+        </a>
+        <a class="navbar-item" href="./consulting.html">
+          Consulting
+        </a>
+        <a class="navbar-item" href="./blog.html">
+          Blog
+        </a>
+        <a class="navbar-item" href="./opensource.html">
+          Open Source
+        </a>
+        <a class="navbar-item" href="./about.html">
+          About
+        </a>
+        <a class="navbar-item" href="https://github.com/oni-tech" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+    });
+  });
+});
+</script>
+
+
+    <section class="section">
+  <div class="container">
+    <div class="content">
+      <h1 id="about-oni-tech">About Oni Tech</h1>
+<p>We are a software consulting company specializing in <strong>OCaml</strong> and <strong>Haskell</strong> development. Our mission is to help organizations build robust, maintainable, and high-performance software using functional programming languages.</p>
+<div class="accent-bar">
+
+</div>
+<h2 id="our-story">Our Story</h2>
+<p>Oni Tech was founded by experienced functional programmers who saw the transformative power of languages like OCaml and Haskell in building reliable software systems. We’ve worked across various industries—from fintech to compilers, from distributed systems to web applications—and have seen firsthand how strong type systems and functional paradigms lead to better outcomes.</p>
+<div class="accent-bar">
+
+</div>
+<h2 id="our-values">Our Values</h2>
+<div class="columns">
+<div class="column is-4">
+<div class="card">
+<div class="card-content has-text-centered">
+<div class="service-icon">
+<p><i class="fas fa-shield-alt"></i></p>
+</div>
+<h3 id="excellence">Excellence</h3>
+<p>We hold ourselves to the highest standards, delivering code that we’re proud to put our name on.</p>
+</div>
+</div>
+</div><div class="column is-4">
+<div class="card">
+<div class="card-content has-text-centered">
+<div class="service-icon">
+<p><i class="fas fa-handshake"></i></p>
+</div>
+<h3 id="partnership">Partnership</h3>
+<p>We work as an extension of your team, invested in your success and committed to knowledge transfer.</p>
+</div>
+</div>
+</div><div class="column is-4">
+<div class="card">
+<div class="card-content has-text-centered">
+<div class="service-icon">
+<p><i class="fas fa-heart"></i></p>
+</div>
+<h3 id="community">Community</h3>
+<p>We believe in contributing back to the ecosystems we depend on through open source and education.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="accent-bar">
+
+</div>
+<h2 id="what-we-do-best">What We Do Best</h2>
+<p>We excel at projects that demand:</p>
+<ul>
+<li><strong>Correctness</strong> - Where bugs have serious consequences</li>
+<li><strong>Performance</strong> - Where efficiency and predictability matter</li>
+<li><strong>Maintainability</strong> - Where codebases need to evolve over time</li>
+<li><strong>Complexity</strong> - Where domain logic is intricate and nuanced</li>
+<li><strong>Concurrency</strong> - Where parallel and distributed computing is essential</li>
+</ul>
+<p>Our functional programming expertise makes us particularly well-suited for:</p>
+<ul>
+<li>Compilers and programming language tools</li>
+<li>Financial systems and trading platforms</li>
+<li>Data processing pipelines and analytics</li>
+<li>Web services and APIs</li>
+<li>Blockchain and smart contracts</li>
+<li>Systems programming and infrastructure</li>
+</ul>
+<div class="accent-bar">
+
+</div>
+<h2 id="get-in-touch">Get in Touch</h2>
+<p>We’d love to hear about your project. Whether you need development resources, consulting advice, or training for your team, we’re here to help.</p>
+<section id="contact-information" class="box" style="background-color: #f9f9f9; border-left: 4px solid var(--oni-gold);">
+<h3>Contact Information</h3>
+<p>📧 <strong>Email:</strong> <a href="mailto:oni-tech@gmail.com">oni-tech@gmail.com</a></p>
+<p>💼 <strong>GitHub:</strong> <a href="https://github.com/oni-tech">github.com/oni-tech</a></p>
+<p>🌐 <strong>Website:</strong> <a href="https://oni-tech.com">oni-tech.com</a></p>
+</section>
+<h3 id="what-to-include-in-your-message">What to Include in Your Message</h3>
+<p>To help us understand your needs, please tell us about:</p>
+<ul>
+<li><strong>Your Project</strong> - What are you trying to build or improve?</li>
+<li><strong>Your Team</strong> - What’s your current team structure and experience level?</li>
+<li><strong>Your Timeline</strong> - When do you need help, and for how long?</li>
+<li><strong>Your Goals</strong> - What does success look like for this engagement?</li>
+</ul>
+<p>We typically respond within 1-2 business days. All inquiries are kept confidential.</p>
+<div class="buttons is-centered" style="margin-top: 2rem;">
+<p><a href="mailto:oni-tech@gmail.com" class="button is-oni-primary is-large">
+<span class="icon"><i class="fas fa-envelope"></i></span>
+<span>Send Us an Email</span>
+</a></p>
+</div>
+<div class="accent-bar">
+
+</div>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<div class="box is-highlighted">
+<p><strong>Q: Do you work with clients remotely?</strong></p>
+<p>A: Yes! We work with clients around the world. We’re experienced with remote collaboration and have processes in place to ensure smooth communication and coordination.</p>
+</div>
+<div class="box is-highlighted">
+<p><strong>Q: What’s the minimum engagement size?</strong></p>
+<p>A: We work on projects of all sizes, from short consulting engagements to long-term development partnerships. Contact us to discuss your specific needs.</p>
+</div>
+<div class="box is-highlighted">
+<p><strong>Q: Do you provide training for teams new to OCaml/Haskell?</strong></p>
+<p>A: Absolutely! We offer workshops, pair programming, and ongoing mentorship to help teams become productive in functional programming languages.</p>
+</div>
+<div class="box is-highlighted">
+<p><strong>Q: Can you help migrate existing projects to OCaml/Haskell?</strong></p>
+<p>A: Yes, we have experience with incremental migration strategies that minimize risk while delivering value early. We can help assess feasibility and plan the transition.</p>
+</div>
+<div class="box is-highlighted">
+<p><strong>Q: Do you work on open source projects?</strong></p>
+<p>A: We’re active contributors to the OCaml and Haskell ecosystems and are open to sponsorship or collaboration on open source work. Reach out to discuss opportunities.</p>
+</div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Oni Tech</h3>
+        <p>Expert consulting in OCaml and Haskell for robust, functional software solutions.</p>
+      </div>
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Links</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="./consulting.html">Consulting Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./opensource.html">Open Source</a></li>
+          <li><a href="./about.html">About & Contact</a></li>
+        </ul>
+      </div>
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Connect</h3>
+        <p>
+          <a href="https://github.com/oni-tech" target="_blank">
+            <span class="icon-text">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </span>
+          </a>
+        </p>
+        <p>
+          <a href="./atom.xml">
+            <span class="icon-text">
+              <span class="icon"><i class="fas fa-rss"></i></span>
+              <span>RSS Feed</span>
+            </span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <hr style="background-color: var(--oni-grey);">
+    <div class="content has-text-centered">
+      <p>&copy; 2025 Oni Tech. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

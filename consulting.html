@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Oni Tech - Expert OCaml and Haskell Consulting">
+    <meta name="author" content="Oni Tech">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consulting Services - Oni Tech</title>
+    <link rel="alternate" type="application/rss+xml" title="Oni Tech RSS Feed" href="./atom.xml" />
+    <link rel="icon" type="image/jpeg" href="./images/oni.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./css/oni-theme.css">
+<link rel="stylesheet" href="./css/syntax.css">
+
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="./">
+        <img src="./images/oni.jpg" alt="Oni Tech Logo">
+        <span style="margin-left: 0.5rem;">Oni Tech</span>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./">
+          Home
+        </a>
+        <a class="navbar-item" href="./consulting.html">
+          Consulting
+        </a>
+        <a class="navbar-item" href="./blog.html">
+          Blog
+        </a>
+        <a class="navbar-item" href="./opensource.html">
+          Open Source
+        </a>
+        <a class="navbar-item" href="./about.html">
+          About
+        </a>
+        <a class="navbar-item" href="https://github.com/oni-tech" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+    });
+  });
+});
+</script>
+
+
+    <section class="section">
+  <div class="container">
+    <div class="content">
+      <h1 id="consulting-services">Consulting Services</h1>
+<h2 id="our-expertise">Our Expertise</h2>
+<p>At Oni Tech, we specialize in building robust, maintainable software using <strong>OCaml</strong> and <strong>Haskell</strong>. With years of experience in functional programming, we help organizations leverage the power of strong type systems and functional paradigms to build better software.</p>
+<div class="accent-bar">
+
+</div>
+<h2 id="what-we-offer">What We Offer</h2>
+<div class="columns">
+<div class="column is-6">
+<h3 id="custom-software-development">Custom Software Development</h3>
+<p>We build production-grade applications using OCaml and Haskell:</p>
+<ul>
+<li><strong>Web Services &amp; APIs</strong> - High-performance backend systems</li>
+<li><strong>Data Processing Pipelines</strong> - Reliable ETL and analytics systems</li>
+<li><strong>Compilers &amp; DSLs</strong> - Language tooling and domain-specific languages</li>
+<li><strong>Blockchain &amp; Fintech</strong> - Smart contracts and financial systems</li>
+<li><strong>System Programming</strong> - Low-level systems and infrastructure</li>
+</ul>
+</div><div class="column is-6">
+<h3 id="architecture-design">Architecture &amp; Design</h3>
+<p>Strategic guidance for your functional programming projects:</p>
+<ul>
+<li><strong>System Architecture</strong> - Design scalable, maintainable systems</li>
+<li><strong>Code Reviews</strong> - Expert feedback on your codebase</li>
+<li><strong>Performance Optimization</strong> - Profile and optimize critical paths</li>
+<li><strong>Migration Strategy</strong> - Transition from other languages to OCaml/Haskell</li>
+<li><strong>Technology Selection</strong> - Choose the right tools and libraries</li>
+</ul>
+</div>
+</div>
+<div class="columns">
+<div class="column is-6">
+<h3 id="team-training-mentoring">Team Training &amp; Mentoring</h3>
+<p>Help your team master functional programming:</p>
+<ul>
+<li><strong>Onboarding Workshops</strong> - Get teams up to speed quickly</li>
+<li><strong>Advanced Training</strong> - Deep dives into advanced topics</li>
+<li><strong>Code Review Sessions</strong> - Learn best practices hands-on</li>
+<li><strong>Pair Programming</strong> - Work alongside our experts</li>
+<li><strong>Long-term Mentorship</strong> - Ongoing support and guidance</li>
+</ul>
+</div><div class="column is-6">
+<h3 id="open-source-support">Open Source Support</h3>
+<p>Support and customization for open source projects:</p>
+<ul>
+<li><strong>Library Development</strong> - Build reusable components</li>
+<li><strong>Contributions</strong> - Features and bug fixes for key projects</li>
+<li><strong>Maintenance</strong> - Long-term support for critical dependencies</li>
+<li><strong>Documentation</strong> - Clear guides and examples</li>
+<li><strong>Community Engagement</strong> - Build vibrant communities</li>
+</ul>
+</div>
+</div>
+<div class="accent-bar">
+
+</div>
+<h2 id="our-approach">Our Approach</h2>
+<section id="discovery-planning" class="box is-highlighted">
+<h3>1. Discovery &amp; Planning</h3>
+<p>We start by understanding your business goals, technical requirements, and team dynamics. This helps us create a tailored engagement that delivers real value.</p>
+</section>
+<section id="iterative-development" class="box is-highlighted">
+<h3>2. Iterative Development</h3>
+<p>We work in close collaboration with your team, delivering incremental value through short iterations. This ensures we stay aligned with your goals and can adapt quickly to changing requirements.</p>
+</section>
+<section id="knowledge-transfer" class="box is-highlighted">
+<h3>3. Knowledge Transfer</h3>
+<p>Our goal is not just to deliver working software, but to empower your team. We provide documentation, training, and ongoing support to ensure long-term success.</p>
+</section>
+<div class="accent-bar">
+
+</div>
+<h2 id="why-functional-programming">Why Functional Programming?</h2>
+<p>Choosing OCaml or Haskell for your project brings significant advantages:</p>
+<ul>
+<li><strong>🛡️ Type Safety</strong> - Catch bugs at compile time, not in production</li>
+<li><strong>🧩 Modularity</strong> - Pure functions and immutability make code easier to test and maintain</li>
+<li><strong>⚡ Performance</strong> - Efficient native compilation with predictable performance</li>
+<li><strong>🔄 Concurrency</strong> - Functional patterns excel at parallel and distributed computing</li>
+<li><strong>📈 Scalability</strong> - Build systems that grow with your business</li>
+</ul>
+<div class="accent-bar">
+
+</div>
+<h2 id="technologies-we-work-with">Technologies We Work With</h2>
+<h3 id="languages-platforms">Languages &amp; Platforms</h3>
+<ul>
+<li><strong>OCaml</strong> - Native and bytecode compilation, excellent tooling ecosystem</li>
+<li><strong>Haskell</strong> - Advanced type system, lazy evaluation, powerful abstractions</li>
+<li><strong>ReasonML</strong> - OCaml syntax for JavaScript developers</li>
+</ul>
+<h3 id="frameworks-tools">Frameworks &amp; Tools</h3>
+<ul>
+<li><strong>Dream, Eio, Lwt</strong> - Modern OCaml web and async programming</li>
+<li><strong>Servant, Yesod, IHP</strong> - Haskell web frameworks</li>
+<li><strong>Dune, Stack, Cabal</strong> - Build systems and package management</li>
+<li><strong>MirageOS</strong> - Unikernel operating system library</li>
+</ul>
+<h3 id="domains">Domains</h3>
+<ul>
+<li>Web applications and services</li>
+<li>Distributed systems</li>
+<li>Compilers and programming languages</li>
+<li>Data engineering and analytics</li>
+<li>Financial technology</li>
+<li>Blockchain and smart contracts</li>
+</ul>
+<div class="accent-bar">
+
+</div>
+<h2 id="engagement-models">Engagement Models</h2>
+<p>We offer flexible engagement options to fit your needs:</p>
+<div class="columns">
+<div class="column is-4">
+<div class="card">
+<section id="project-based" class="card-content">
+<h3>Project-Based</h3>
+<p>Fixed scope and timeline for specific deliverables. Ideal for well-defined projects with clear requirements.</p>
+</section>
+</div>
+</div><div class="column is-4">
+<div class="card">
+<section id="time-materials" class="card-content">
+<h3>Time &amp; Materials</h3>
+<p>Flexible hourly or daily rates for ongoing work. Perfect for evolving projects and long-term partnerships.</p>
+</section>
+</div>
+</div><div class="column is-4">
+<div class="card">
+<section id="retainer" class="card-content">
+<h3>Retainer</h3>
+<p>Dedicated capacity for ongoing support and development. Great for teams that need consistent expertise.</p>
+</section>
+</div>
+</div>
+</div>
+<div class="accent-bar">
+
+</div>
+<h2 id="ready-to-get-started">Ready to Get Started?</h2>
+<p>Let’s discuss how we can help with your project. Whether you need full-time development resources or occasional consulting, we’re here to help.</p>
+<div class="buttons is-centered" style="margin-top: 2rem;">
+<p><a href="./about.html" class="button is-oni-primary is-large">
+<span class="icon"><i class="fas fa-envelope"></i></span>
+<span>Contact Us</span>
+</a></p>
+</div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Oni Tech</h3>
+        <p>Expert consulting in OCaml and Haskell for robust, functional software solutions.</p>
+      </div>
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Links</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="./consulting.html">Consulting Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./opensource.html">Open Source</a></li>
+          <li><a href="./about.html">About & Contact</a></li>
+        </ul>
+      </div>
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Connect</h3>
+        <p>
+          <a href="https://github.com/oni-tech" target="_blank">
+            <span class="icon-text">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </span>
+          </a>
+        </p>
+        <p>
+          <a href="./atom.xml">
+            <span class="icon-text">
+              <span class="icon"><i class="fas fa-rss"></i></span>
+              <span>RSS Feed</span>
+            </span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <hr style="background-color: var(--oni-grey);">
+    <div class="content has-text-centered">
+      <p>&copy; 2025 Oni Tech. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,57 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head profile="http://www.w3.org/2005/10/profile">
+<head>
     <meta charset="UTF-8">
-    <meta name="description" content="The OniTech Blog">
+    <meta name="description" content="Oni Tech - Expert OCaml and Haskell Consulting">
     <meta name="author" content="Oni Tech">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The OniTech Blog</title>
-    <link rel="alternative" type="application/rss+xml" title="Oni Tech RSS Feed" href="../atom.xml" />
-    <link rel="icon" type="image/png" href="../images/favicon.png">
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Example Post - Oni Tech</title>
+    <link rel="alternate" type="application/rss+xml" title="Oni Tech RSS Feed" href="../atom.xml" />
+    <link rel="icon" type="image/jpeg" href="../images/oni.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../css/oni-theme.css">
 <link rel="stylesheet" href="../css/syntax.css">
-<link rel="stylesheet" href="../css/theme.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
 
 </head>
-    <body>
-        <header>
-  <div class="container clearfix">
-    <a href="https://oni-tech.com" class="path">[Oni Tech]</a>
-
-    <span class="caret"># _</span>
-    <a class="path" href="https://github.com/oni-tech/">Github</a>
-    <div class="right">
-    </div>
-</header>
-
-
-        <div class="container">
-          <article class="single" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="meta">
-    <span class="key">published on</span>
-    <span class="val"><time itemprop="datePublished" datetime="August 23, 2015">August 23, 2015</time></span>
-    <br>
-    <span class="key">tags:</span>
-    <span class="val">
-      <a href="../tags/haskell.html" class="tag">haskell</a> <a href="../tags/ocaml.html" class="tag">ocaml</a>
-    </span>
-  </div>
-  <h1 class="headline" itemprop="headline">Example Post</h1>
-  <section class="body" itemprop="articleBody">
-    <p>Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl tincidunt et. Donec turpis lectus, mattis ac malesuada a, accumsan eu libero. Morbi condimentum, tortor et tincidunt ullamcorper, sem quam pretium nulla, id convallis lectus libero nec turpis. Proin dapibus nisi id est sodales nec ultrices tortor pellentesque.</p>
-<p>Vivamus vel nisi ac lacus sollicitudin vulputate ac ut ligula. Nullam feugiat risus eget eros gravida in molestie sapien euismod. Nunc sed hendrerit orci. Nulla mollis consequat lorem ac blandit. Ut et turpis mauris. Nulla est odio, posuere id ullamcorper sit amet, tincidunt vel justo. Curabitur placerat tincidunt varius. Nulla vulputate, ipsum eu consectetur mollis, dui nibh aliquam neque, at ultricies leo ligula et arcu.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">data</span> <span class="dt">Foo</span> <span class="ot">=</span> <span class="dt">Bar</span> <span class="kw">deriving</span> (<span class="dt">Show</span>, <span class="dt">Eq</span>)</span></code></pre></div>
-  </section>
-</article>
-
-        </div>
-        <footer>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="container">
-    <span class="copyright">&copy; 2021 Oni Tech - <a href="../atom.xml">Feed</a> /
-      <span class="theme">Theme - <a href="https://github.com/htdvisser/hugo-base16-theme.git">hugo-base16-theme</a>
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../">
+        <img src="../images/oni.jpg" alt="Oni Tech Logo">
+        <span style="margin-left: 0.5rem;">Oni Tech</span>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="../">
+          Home
+        </a>
+        <a class="navbar-item" href="../consulting.html">
+          Consulting
+        </a>
+        <a class="navbar-item" href="../blog.html">
+          Blog
+        </a>
+        <a class="navbar-item" href="../opensource.html">
+          Open Source
+        </a>
+        <a class="navbar-item" href="../about.html">
+          About
+        </a>
+        <a class="navbar-item" href="https://github.com/oni-tech" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+    });
+  });
+});
+</script>
+
+
+    <section class="hero is-oni is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-1" itemprop="headline">
+        Example Post
+      </h1>
+      <div class="post-meta" style="color: rgba(255,255,255,0.9);">
+        <span class="icon-text">
+          <span class="icon">
+            <i class="far fa-calendar"></i>
+          </span>
+          <span><time itemprop="datePublished" datetime="August 23, 2015">August 23, 2015</time></span>
+        </span>
+        
+        <span style="margin-left: 1rem;">
+          <a href="../tags/haskell.html" class="tag">haskell</a> <a href="../tags/ocaml.html" class="tag">ocaml</a>
+        </span>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <article class="content" itemscope itemtype="http://schema.org/BlogPosting">
+      <div itemprop="articleBody">
+        <p>Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl
+tincidunt et. Donec turpis lectus, mattis ac malesuada a, accumsan eu libero.
+Morbi condimentum, tortor et tincidunt ullamcorper, sem quam pretium nulla, id
+convallis lectus libero nec turpis. Proin dapibus nisi id est sodales nec
+ultrices tortor pellentesque.</p>
+<p>Vivamus vel nisi ac lacus sollicitudin vulputate
+ac ut ligula. Nullam feugiat risus eget eros gravida in molestie sapien euismod.
+Nunc sed hendrerit orci. Nulla mollis consequat lorem ac blandit. Ut et turpis
+mauris. Nulla est odio, posuere id ullamcorper sit amet, tincidunt vel justo.
+Curabitur placerat tincidunt varius. Nulla vulputate, ipsum eu consectetur
+mollis, dui nibh aliquam neque, at ultricies leo ligula et arcu.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">data</span> <span class="dt">Foo</span> <span class="ot">=</span> <span class="dt">Bar</span> <span class="kw">deriving</span> (<span class="dt">Show</span>, <span class="dt">Eq</span>)</span></code></pre></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+    <footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Oni Tech</h3>
+        <p>Expert consulting in OCaml and Haskell for robust, functional software solutions.</p>
+      </div>
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Links</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="../consulting.html">Consulting Services</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../opensource.html">Open Source</a></li>
+          <li><a href="../about.html">About & Contact</a></li>
+        </ul>
+      </div>
+      <div class="column is-4">
+        <h3 class="title is-5" style="color: var(--oni-gold);">Connect</h3>
+        <p>
+          <a href="https://github.com/oni-tech" target="_blank">
+            <span class="icon-text">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </span>
+          </a>
+        </p>
+        <p>
+          <a href="../atom.xml">
+            <span class="icon-text">
+              <span class="icon"><i class="fas fa-rss"></i></span>
+              <span>RSS Feed</span>
+            </span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <hr style="background-color: var(--oni-grey);">
+    <div class="content has-text-centered">
+      <p>&copy; 2025 Oni Tech. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 
-    </body>
+</body>
 </html>

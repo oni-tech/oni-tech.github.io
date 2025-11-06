@@ -5,21 +5,21 @@
     <meta name="description" content="Oni Tech - Expert OCaml and Haskell Consulting">
     <meta name="author" content="Oni Tech">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OCaml Modules - Oni Tech</title>
-    <link rel="alternate" type="application/rss+xml" title="Oni Tech RSS Feed" href="../atom.xml" />
-    <link rel="icon" type="image/jpeg" href="../images/oni.jpg">
+    <title>Blog - Oni Tech</title>
+    <link rel="alternate" type="application/rss+xml" title="Oni Tech RSS Feed" href="./atom.xml" />
+    <link rel="icon" type="image/jpeg" href="./images/oni.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="../css/oni-theme.css">
-<link rel="stylesheet" href="../css/syntax.css">
+<link rel="stylesheet" href="./css/oni-theme.css">
+<link rel="stylesheet" href="./css/syntax.css">
 
 </head>
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="../">
-        <img src="../images/oni.jpg" alt="Oni Tech Logo">
+      <a class="navbar-item" href="./">
+        <img src="./images/oni.jpg" alt="Oni Tech Logo">
         <span style="margin-left: 0.5rem;">Oni Tech</span>
       </a>
 
@@ -32,19 +32,19 @@
 
     <div id="navbarMenu" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="../">
+        <a class="navbar-item" href="./">
           Home
         </a>
-        <a class="navbar-item" href="../consulting.html">
+        <a class="navbar-item" href="./consulting.html">
           Consulting
         </a>
-        <a class="navbar-item" href="../blog.html">
+        <a class="navbar-item" href="./blog.html">
           Blog
         </a>
-        <a class="navbar-item" href="../opensource.html">
+        <a class="navbar-item" href="./opensource.html">
           Open Source
         </a>
-        <a class="navbar-item" href="../about.html">
+        <a class="navbar-item" href="./about.html">
           About
         </a>
         <a class="navbar-item" href="https://github.com/oni-tech" target="_blank">
@@ -72,39 +72,81 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 
-    <section class="hero is-oni is-small">
+    <section class="hero is-oni">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title is-1" itemprop="headline">
-        OCaml Modules
+      <h1 class="title is-1">
+        Technical Blog
       </h1>
-      <div class="post-meta" style="color: rgba(255,255,255,0.9);">
-        <span class="icon-text">
-          <span class="icon">
-            <i class="far fa-calendar"></i>
-          </span>
-          <span><time itemprop="datePublished" datetime="January 13, 2021">January 13, 2021</time></span>
-        </span>
-        
-        <span style="margin-left: 1rem;">
-          <a href="../tags/ocaml.html" class="tag">ocaml</a>
-        </span>
-        
-      </div>
+      <p class="subtitle is-4">
+        Insights, tutorials, and best practices for functional programming
+      </p>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <article class="content" itemscope itemtype="http://schema.org/BlogPosting">
-      <div itemprop="articleBody">
-        <div class="sourceCode" id="cb1"><pre class="sourceCode ocaml"><code class="sourceCode ocaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">module</span> <span class="kw">type</span> Comparable = <span class="kw">sig</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">type</span> t</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">val</span> <span class="dt">compare</span> : t -&gt; t -&gt; <span class="dt">int</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-      </div>
-    </article>
+    <div class="content">
+      
+      <article class="box">
+        <h2 class="title is-3 post-title">
+          <a href="./posts/2021-01-13-ocaml.html">OCaml Modules</a>
+        </h2>
+        <div class="post-meta">
+          <span class="icon-text">
+            <span class="icon">
+              <i class="far fa-calendar"></i>
+            </span>
+            <span>January 13, 2021</span>
+          </span>
+          
+          <span style="margin-left: 1rem;">
+            <a href="./tags/ocaml.html" class="tag">ocaml</a>
+          </span>
+          
+        </div>
+      </article>
+      
+      <article class="box">
+        <h2 class="title is-3 post-title">
+          <a href="./posts/2015-08-23-example.html">Example Post</a>
+        </h2>
+        <div class="post-meta">
+          <span class="icon-text">
+            <span class="icon">
+              <i class="far fa-calendar"></i>
+            </span>
+            <span>August 23, 2015</span>
+          </span>
+          
+          <span style="margin-left: 1rem;">
+            <a href="./tags/haskell.html" class="tag">haskell</a> <a href="./tags/ocaml.html" class="tag">ocaml</a>
+          </span>
+          
+        </div>
+      </article>
+      
+      <article class="box">
+        <h2 class="title is-3 post-title">
+          <a href="./posts/2009-05-23-acer-aspire-one-with-netbsd-50.html">Acer Aspire One</a>
+        </h2>
+        <div class="post-meta">
+          <span class="icon-text">
+            <span class="icon">
+              <i class="far fa-calendar"></i>
+            </span>
+            <span>May 23, 2009</span>
+          </span>
+          
+          <span style="margin-left: 1rem;">
+            <a href="./tags/netbsd.html" class="tag">netbsd</a>
+          </span>
+          
+        </div>
+      </article>
+      
+    </div>
   </div>
 </section>
 
@@ -119,10 +161,10 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="column is-4">
         <h3 class="title is-5" style="color: var(--oni-gold);">Links</h3>
         <ul style="list-style: none; padding: 0;">
-          <li><a href="../consulting.html">Consulting Services</a></li>
-          <li><a href="../blog.html">Blog</a></li>
-          <li><a href="../opensource.html">Open Source</a></li>
-          <li><a href="../about.html">About & Contact</a></li>
+          <li><a href="./consulting.html">Consulting Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./opensource.html">Open Source</a></li>
+          <li><a href="./about.html">About & Contact</a></li>
         </ul>
       </div>
       <div class="column is-4">
@@ -136,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </a>
         </p>
         <p>
-          <a href="../atom.xml">
+          <a href="./atom.xml">
             <span class="icon-text">
               <span class="icon"><i class="fas fa-rss"></i></span>
               <span>RSS Feed</span>
