@@ -1,9 +1,55 @@
-<header>
-  <div class="container clearfix">
-    <a href="https://oni-tech.com" class="path">[Oni Tech]</a>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/oni.jpg" alt="Oni Tech Logo">
+        <span style="margin-left: 0.5rem;">Oni Tech</span>
+      </a>
 
-    <span class="caret"># _</span>
-    <a class="path" href="https://github.com/oni-tech/">Github</a>
-    <div class="right">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-</header>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="/">
+          Home
+        </a>
+        <a class="navbar-item" href="/consulting.html">
+          Consulting
+        </a>
+        <a class="navbar-item" href="/blog.html">
+          Blog
+        </a>
+        <a class="navbar-item" href="/opensource.html">
+          Open Source
+        </a>
+        <a class="navbar-item" href="/about.html">
+          About
+        </a>
+        <a class="navbar-item" href="https://github.com/oni-tech" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const $$navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  $$navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+      const target = el.dataset.target;
+      const $$target = document.getElementById(target);
+      el.classList.toggle('is-active');
+      $$target.classList.toggle('is-active');
+    });
+  });
+});
+</script>

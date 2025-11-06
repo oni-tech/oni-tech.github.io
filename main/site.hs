@@ -46,6 +46,30 @@ main = hakyll $ do
         >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags tags)
         >>= relativizeUrls
 
+  -- Build static pages (consulting, about, opensource)
+  match "pages/*" $ do
+    route $ setExtension "html" `composeRoutes` gsubRoute "pages/" (const "")
+    compile $ do
+      pandocCompiler
+        >>= loadAndApplyTemplate "templates/page.html" defaultContext
+        >>= loadAndApplyTemplate "templates/default.html" defaultContext
+        >>= relativizeUrls
+
+  -- Build blog page with all posts
+  create ["blog.html"] $ do
+    route idRoute
+    compile $ do
+      posts <- recentFirst =<< loadAll "posts/*"
+      let blogCtx =
+            listField "posts" (postCtxWithTags tags) (return posts)
+              <> constField "title" "Blog"
+              <> defaultContext
+
+      makeItem ""
+        >>= loadAndApplyTemplate "templates/blog.html" blogCtx
+        >>= loadAndApplyTemplate "templates/default.html" blogCtx
+        >>= relativizeUrls
+
   -- Create HTML redirects for old url structure
   createRedirects
     [ ( "blog/2009/05/23/acer-aspire-one-with-netbsd-50/index.html",
@@ -57,7 +81,7 @@ main = hakyll $ do
   match "index.html" $ do
     route idRoute
     compile $ do
-      posts <- recentFirst =<< loadAll "posts/*"
+      posts <- fmap (take 5) . recentFirst =<< loadAll "posts/*"
       let indexCtx =
             listField "posts" postCtx (return posts)
               <> constField "title" "Home"
@@ -66,6 +90,7 @@ main = hakyll $ do
       getResourceBody
         >>= applyAsTemplate indexCtx
         >>= loadAndApplyTemplate "templates/index.html" indexCtx
+        >>= loadAndApplyTemplate "templates/default.html" indexCtx
         >>= relativizeUrls
 
   -- Render atom / rss feeds

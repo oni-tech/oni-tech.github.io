@@ -1,18 +1,15 @@
-<h1 class="headline">Recent Posts</h1>
-
-<div class="article-list">
-  $for(posts)$
-
-  <article class="list-item" itemscope itemtype="http://oni-tech.com">
-    <h2 class="headline" itemprop="headline"><a href="$url$">$title$</a></h2>
-    <div class="meta">
-      <span class="key">published on</span>
-      <span class="val"><time itemprop="datePublished" datetime="$date$">$date$</time></span>
-    </div>
-    <section class="summary">
-      Insert Summary Here.
-      <a href="$url$">Read More...</a>
-    </section>
-  </article>
-  $endfor$
-</ul>
+$for(posts)$
+<article class="box">
+  <h3 class="title is-4 post-title">
+    <a href="$url$">$title$</a>
+  </h3>
+  <div class="post-meta">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span>$date$</span>
+    </span>
+  </div>
+</article>
+$endfor$

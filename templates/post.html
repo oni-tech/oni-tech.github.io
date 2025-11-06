@@ -1,15 +1,32 @@
-<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="meta">
-    <span class="key">published on</span>
-    <span class="val"><time itemprop="datePublished" datetime="$date$">$date$</time></span>
-    <br>
-    <span class="key">tags:</span>
-    <span class="val">
-      $tags$
-    </span>
+<section class="hero is-oni is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-1" itemprop="headline">
+        $title$
+      </h1>
+      <div class="post-meta" style="color: rgba(255,255,255,0.9);">
+        <span class="icon-text">
+          <span class="icon">
+            <i class="far fa-calendar"></i>
+          </span>
+          <span><time itemprop="datePublished" datetime="$date$">$date$</time></span>
+        </span>
+        $if(tags)$
+        <span style="margin-left: 1rem;">
+          $tags$
+        </span>
+        $endif$
+      </div>
+    </div>
   </div>
-  <h1 class="headline" itemprop="headline">$title$</h1>
-  <section class="body" itemprop="articleBody">
-    $body$
-  </section>
-</article>
+</section>
+
+<section class="section">
+  <div class="container">
+    <article class="content" itemscope itemtype="http://schema.org/BlogPosting">
+      <div itemprop="articleBody">
+        $body$
+      </div>
+    </article>
+  </div>
+</section>

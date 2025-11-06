@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head profile="http://www.w3.org/2005/10/profile">
+<head>
     <meta charset="UTF-8">
-    <meta name="description" content="The OniTech Blog">
+    <meta name="description" content="Oni Tech - Expert OCaml and Haskell Consulting">
     <meta name="author" content="Oni Tech">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>The OniTech Blog</title>
-    <link rel="alternative" type="application/rss+xml" title="Oni Tech RSS Feed" href="/atom.xml" />
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>$title$ - Oni Tech</title>
+    <link rel="alternate" type="application/rss+xml" title="Oni Tech RSS Feed" href="/atom.xml" />
+    <link rel="icon" type="image/jpeg" href="/images/oni.jpg">
     $partial("templates/head.html")$
 </head>
-    <body>
-        $partial("templates/header.html")$
+<body>
+    $partial("templates/header.html")$
 
-        <div class="container">
-          $body$
-        </div>
-        $partial("templates/footer.html")$
-    </body>
+    $body$
+
+    $partial("templates/footer.html")$
+</body>
 </html>

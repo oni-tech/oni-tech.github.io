@@ -18,7 +18,7 @@ jobs:
     #   CONFIG: "--enable-tests --enable-benchmarks"
     steps:
       - uses: actions/checkout@v3
-      - uses: haskell/actions/setup@v2.3.3
+      - uses: haskell/actions/setup@v2.4.6
         id: setup-haskell-cabal
         with:
           ghc-version: ${{ matrix.ghc }}
@@ -27,7 +27,7 @@ jobs:
         run: |
           cabal v2-update
           cabal v2-freeze $CONFIG
-      - uses: actions/cache@v3.2.6
+      - uses: actions/cache@v4
         with:
           path: |
             ${{ steps.setup-haskell-cabal.outputs.cabal-store }}
@@ -40,7 +40,7 @@ jobs:
           cabal v2-build $CONFIG
           cabal exec site build
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         if: github.ref == 'refs/heads/master'
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
