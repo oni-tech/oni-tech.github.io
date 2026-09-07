@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>OniTech Blog</title>
+    <subtitle><![CDATA[OniTech aims to share knowledge about functionalprogramming, distribute best-practices based on our extensive experience and tell about various topics from beginner-friendly introductions to advanced type-level tricks.]]></subtitle>
     <link href="https://oni-tech.com/atom.xml" rel="self" />
     <link href="https://oni-tech.com" />
     <id>https://oni-tech.com/atom.xml</id>
